@@ -23,7 +23,10 @@ public class ReaderConfig {
 
 
     private final DataSource dataSource;
-    // Usage to inject the CustomerRowMapper implementation, and use it in the reader configuration
+    /*
+     If you want to use the CustomerRowMapper implementation (at mapper package), uncomment the code below.
+     There's more changing needed in order to achieve this throughout the code in this class.
+     */
     //private final CustomerRowMapper clientRowMapper;
 
     public ReaderConfig(
@@ -54,10 +57,10 @@ public class ReaderConfig {
              */
             //.beanRowMapper(Customer.class)
             /*
-                    The mapper below can be used everytime, that's the recommended method, since it can map any result set
-                    field or column names from the database to any domain class attribute.
-                    Just need to implement the RowMapper interface.
-                */
+            The mapper below can be used everytime, that's the recommended method, since it can map any result set
+            field or column names from the database to any domain class attribute.
+            Just need to implement the RowMapper interface.
+            */
             //.rowMapper(clientRowMapper)
             .rowMapper(rowMapper())
             .build();
