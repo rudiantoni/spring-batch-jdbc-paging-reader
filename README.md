@@ -44,5 +44,5 @@
 
 Log image with working example:
 - **Linux**: [spring-batch-jdbc-paging-reader](https://i.imgur.com/ecLluhy.png)
-- **Windows**: [spring-batch-jdbc-paging-reader](xxx)
+- **Windows**: [spring-batch-jdbc-paging-reader](https://i.imgur.com/AjgR9CH.png)
 
